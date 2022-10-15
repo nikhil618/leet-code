@@ -4,3 +4,4 @@ import "./7-Reverse-Integer";
 import "./22-Generate-Parentheses";
 import "./200-number-island";
 import "./394-Decode-String";
+import "./5-Longest-Palindromic-Substring";
