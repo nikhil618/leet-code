@@ -10,7 +10,5 @@ const checkIfPangram =(sentence: string): boolean => {
 };
 
 console.log("1832-Check-if-the-Sentence-Is-Pangram \n")
-let sentence = "thequickbrownfoxjumpsoverthelazydog";
-console.log(`${sentence} ==> `, checkIfPangram(sentence));
-sentence = 'leetcode';
-console.log(`${sentence} ==> `, checkIfPangram(sentence));
+console.log(`thequickbrownfoxjumpsoverthelazydog ==> `, checkIfPangram('thequickbrownfoxjumpsoverthelazydog'));
+console.log(`leetcode ==> `, checkIfPangram('leetcode'));
