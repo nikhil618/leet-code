@@ -1,9 +1,9 @@
-import "./1-two-sum";
-import "./2-Add-Two-Numbers";
-import "./7-Reverse-Integer";
-import "./22-Generate-Parentheses";
-import "./200-number-island";
-import "./394-Decode-String";
-import "./5-Longest-Palindromic-Substring";
-import "./121-Best-Time-to-Buy-and-Sell-Stock";
-import "./217-Contains-Duplicate";
+import "./1. Two-sum";
+import "./2. Add-Two-Numbers";
+import "./7. Reverse-Integer";
+import "./22. Generate-Parentheses";
+import "./200. Number-island";
+import "./394. Decode-String";
+import "./5. Longest-Palindromic-Substring";
+import "./121. Best-Time-to-Buy-and-Sell-Stock";
+import "./217. Contains-Duplicate";

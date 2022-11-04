@@ -12,7 +12,7 @@ const pivotIndex = (nums: number[]): number => {
     return -1;
 };
 
-console.log("724-Find Pivot Index \n")
+console.log("724. Find Pivot Index \n")
 console.log(`[1,7,3,6,5,6] ==> `, pivotIndex([1,7,3,6,5,6]));
 console.log(`[1,2,3] ==> `, pivotIndex([1,2,3]));
 console.log(`[2,1,-1] ==> `, pivotIndex([2,1,-1]));
