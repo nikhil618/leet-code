@@ -1,7 +1,7 @@
 /**
  * Definition for singly-linked list.
  */
-class ListNode {
+export class ListNode {
     val: number
     next: ListNode | null
     constructor(val?: number, next?: ListNode | null) {
@@ -10,7 +10,29 @@ class ListNode {
     }
 }
 
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
+export const listToNodeGenerator = (val: number[]): ListNode | null => {
+    if (!val || val?.length === 0) return null;
+    const head = new ListNode();
+    let curr = head;
+    for (let i of val) {
+        curr.next = new ListNode(i);
+        curr = curr.next;
+    }
+    return head.next;
+};
+
+export const nodeToListGenerator = (head: ListNode | null): number[] => {
+    const list = [] as number[];
+    do {
+        if (head && isFinite(head.val)) {
+            list.push(head.val);
+            head = head.next;
+        }
+    } while (head)
+    return list;
+};
+
+export const addTwoNumbers = (l1: ListNode | null, l2: ListNode | null): ListNode | null => {
     let sum: ListNode = new ListNode(0),
         current = sum,
         p1 = l1,
@@ -41,5 +63,5 @@ function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | nul
     return sum.next;
 };
 
-
-// console.log(addTwoNumbers([2,4,3], [5,6,4]));
+console.log("2. Add-Two-Numbers \n")
+console.log(nodeToListGenerator(addTwoNumbers(listToNodeGenerator([2,4,3]), listToNodeGenerator([5,6,4]))));
