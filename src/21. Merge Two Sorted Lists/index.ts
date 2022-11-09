@@ -1,4 +1,4 @@
-import { ListNode, listToNodeGenerator, nodeToListGenerator } from "../2. Add-Two-Numbers";
+import { ListNode, listToNodeGenerator, nodeToListGenerator } from "..";
 
 const mergeTwoLists = (list1: ListNode | null, list2: ListNode | null): ListNode | null => {
     const head = new ListNode();
@@ -20,4 +20,3 @@ const mergeTwoLists = (list1: ListNode | null, list2: ListNode | null): ListNode
 console.log("21. Merge Two Sorted Lists \n")
 console.log(`[1,2,4] [1,3,4] ==> `, nodeToListGenerator(mergeTwoLists(listToNodeGenerator([1,2,4]), listToNodeGenerator([1,3,4]))));
 console.log(`[] [0] ==> `, nodeToListGenerator(mergeTwoLists(listToNodeGenerator([]), listToNodeGenerator([0]))));
-

@@ -1,5 +1,28 @@
 {
+  "name": "leet-code",
+  "version": "1.0.0",
+  "description": "Leet code solutions in TS",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhil618/leet-code.git"
+  },
+  "keywords": [
+    "LeetCode",
+    "TS"
+  ],
+  "author": "nikhil_618@yahoo.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikhil618/leet-code/issues"
+  },
+  "homepage": "https://github.com/nikhil618/leet-code#readme",
   "dependencies": {
+    "rxjs": "^7.5.7",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   }
